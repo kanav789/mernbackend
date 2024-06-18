@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Taking Web APP</title>
+
+    <link rel="stylesheet" href="/stylessheets/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <form action="/create" method="post">
+          <input type="text" placeholder="Title goes here" name="title" />
+          <textarea
+            placeholder="Write your task detail"
+            name="details"
+          ></textarea>
+
+          <button>Submit</button>
+        </form>
+      </div>
+      <div class="card">
+        <% if(files.length > 0 ){%> <% files.forEach(function(val){%>
+        <div class="taskbox">
+          <div class="task">
+            <h3><%=val%></h3>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <a href="/files/<%= val %>">Read More</a>
+
+              <form action="/files/<%= val %>" method="post" class="delete">
+                <button type="submit">Delete</button>
+              </form>
+            </div>
+          </div>
+
+          <% })%> <% } else{ %>
+          <h3>no task yet</h3>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

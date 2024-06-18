@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #040303;
+}
+
+h3 {
+  padding: 12px;
+  color: #a69d9d;
+}
+form {
+  padding: 15px;
+}
+form input {
+  padding: 10px;
+  color: #9c9b9b;
+}
+input:focus {
+  outline: none;
+}

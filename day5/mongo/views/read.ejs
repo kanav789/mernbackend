@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="allUser">
+        <h3>All User</h3>
+      </div>
+
+      <div class="all">
+        <%users.forEach(function(user){%>
+
+        <div class="user">
+          <div class="imageUrl"><img src="<%=user.ImageUrl %>" alt="" /></div>
+          <h3><%=user.name %></h3>
+          <div class="email"><%=user.email %></div>
+          <div class="button">
+            <a href="/edit/<%= user._id%>">Edit</a>
+            <a href="/delete/<%= user._id%>">Delete</a>
+          </div>
+        </div>
+
+        <%}) %>
+      </div>
+    </div>
+  </body>
+</html>

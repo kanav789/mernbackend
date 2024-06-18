@@ -1,0 +1,34 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.textEditor {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin: 5px 10px 0 0;
+}
+
+form textarea {
+  width: 95%;
+  resize: none;
+  height: 80vh;
+  margin: 10px;
+  box-shadow: 1px 1px 1px grey;
+  border-color: #ccc;
+  padding: 3px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ccc;
+}
+a {
+  text-decoration: none;
+}

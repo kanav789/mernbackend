@@ -1,0 +1,3 @@
+The concept of random text generation has been around for centuries, with the earliest recorded use of random text being in the 16th century. The term “Lorem Ipsum” is often used to describe this type of text, which is derived from a piece of classical Latin literature from 45 BC. This text has been used as a placeholder in the graphic design and publishing industries for many years.
+
+There are several tools available online that can generate random text, including the Random Line Picker and RANDOM.ORG String Generator. These tools use various methods to generate random text, such as atmospheric noise and pseudo-random number algorithms.

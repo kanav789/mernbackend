@@ -1,0 +1,70 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.main {
+  min-height: 100vh;
+  max-height: 100%;
+
+  background: #1f1e1e;
+}
+form {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form input,
+textarea {
+  background-color: #393838;
+  color: #cdcdcd;
+
+  border-radius: 5px;
+  height: 5cqh;
+  margin: 5px 25px;
+  resize: none;
+}
+form button {
+  background: #0e3386;
+  width: 10vh;
+  padding: 6px;
+  border-radius: 6px;
+  justify-content: center;
+  margin: 0 25px;
+  color: #cdcdcd;
+}
+
+.card {
+  display: flex;
+  margin: 5pc;
+}
+
+.taskbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.task {
+  margin-top: 40px;
+  background: #393838;
+  width: 35vh;
+  color: #cdcdcd;
+  height: 10vh;
+
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.task a {
+  color: #cdcdcd;
+}
+h3 {
+  color: #cdcdcd;
+}
+
+.delete button {
+  height: 30px;
+}
